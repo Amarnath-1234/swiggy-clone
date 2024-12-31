@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 12%;
+    background-color: #FFFFFF;
+    color: #3d4152;
+    font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+    box-shadow: 10px 0 10px 10px #f1f0f0;
+    display: flex;
+    z-index: 10;
+}
+.leftnav{
+    width:30%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(./images/logo.webp);
+    background-size: cover;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+.nl{
+    cursor: pointer;
+}
+.other{
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+}
+.other:hover{
+    color: #ff5200;
+    border-color: #ff5200;
+}
+.other+i{
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: #ff5200;
+}
+.rightnav{
+    width: 70%;
+    height: 100%;
+    padding-right: 3rem;
+    display: flex;
+}
+.rightnav li{
+    cursor: pointer;
+}
+.rightnav li:hover{
+    color: #ff5200;
+}
+.rightnav ul{
+    padding: 0 4rem;
+    width: 100%;
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.rightnav li{
+    display: flex;
+    gap: 10px;
+}
+li sup{
+    color: #ffa700;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+/* Container section ======================================================*/
+
+.container{
+    margin-top:4.8rem ;
+    /* z-index: -1; */
+    width: 100%;
+    height: 88vh;
+    background-color: #FFFFFF;
+    font-family: Gilroy, Arial, sans-serif;
+}
+.upper{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    position: relative;
+}
+.uphead{
+    width: 100%;
+    height: 20%;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: -0.4px;
+    color: #02060ceb;
+}
+
+.arrow{
+    position: absolute;
+    top: 10px;    
+    right: 10px;  
+    padding: 10px;
+}
+.card{
+    box-shadow: 0 0 15px 5px #aaadb9;
+    width: 25%;
+    height: 65%;
+    right: 10px;
+    position: absolute;
+    background-color: #FFFFFF;
+    z-index: 11;
+    display: none;
+}
+.cart:hover+.card{
+    display: block;
+}
+.body-contain{
+    width:100%;
+    height: 80%;
+    display: flex;
+}
+.up-image{
+    width: 14.28%;
+    height: 80%;
+    display: flex;
+}
+hr{
+    margin: 0 8rem;
+}
+.lower{
+    position: relative;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+}
+.down-image{
+    background-size: cover;
+    margin: 0 1rem;
+    width: 100%;
+    height: 90%;
+}
+.down-image:hover{
+    transform: scale(0.95);
+}
+.down-image img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+}
+.caption{
+    margin: 0.5rem  0.5rem ;
+}
+.c-heading{
+    font-family: Gilroy_Bold;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.rating{
+    font-size: 13px;
+    font-weight: 600;
+}
+.rating>i{
+    color: #069b06;
+}
+.cap{
+    font-family: Gilroy;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: -0.3px;
+    color: #01050a99;
+}
+
+.foot{
+    width: 100%;
+    height: 80vh;
+    background-color: #F0F0F5;
+    margin-top: 3px;
+}
+.up-foot{
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.left-foot{
+    padding-left: 3rem;
+    width: 55%;
+    font-family: Gilroy, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    line-height: 31px;
+    letter-spacing: -1px;
+    color: rgba(2, 6, 12, 0.75);
+}
+.right-foot{
+    /* padding-right: 2rem; */
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.right-foot>img{
+    width:9.5rem;
+    height: 3.3rem;
+}
+
+.down-foot{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    font-family: Gilroy, Arial, sans-serif;
+}
+.df{
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.df-1{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url(./images/logo.webp);
+    background-size: cover;
+    border-radius: 10px;
+}
+.logo-sw{
+    width: 9rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.sw-txt{
+    font-size: 1.4rem;
+    color: rgb(254, 80, 5);
+    font-weight: bolder;
+}
+.copy{
+    display: flex;
+    flex-direction: column;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    list-style: none;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(2, 6, 12, 0.6);
+}
+.list-head{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(2, 6, 12, 0.92);
+}
+.legal{
+    padding-top: 3.2rem;
+}
